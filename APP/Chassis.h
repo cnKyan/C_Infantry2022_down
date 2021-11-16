@@ -23,6 +23,13 @@ extern rc_type_t rc;
 PID_t RotateFollow;
 chassis_t chassis;
 Motor_t ChassisMotor[4];
+rc_type_t rc;
+gimbal_yaw_t gim;
+glb_err_type_t glb_err;
+/* gimbal relative position param */
+float pit_relative_angle;
+float yaw_relative_angle;  //unit: degree
+km_control_t km;
 /**
   * @brief     底盘控制任务函数
   */
@@ -62,6 +69,7 @@ void chassis_open_loop_calculate(void);
 /**
   * @brief     底盘陀螺处理函数
   */
+void send_chassis_moto_current(int16_t current[]);
 void chassis_top_handle(void);
 void send_chassis_moto_zero_current(void);
 extern chassis_t chassis;

@@ -77,9 +77,11 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan){
 }
 void write_can(CAN_HandleTypeDef can, uint32_t send_id, uint8_t send_data[]){
     uint32_t send_mail_box;
-    gimbal_tx_message.StdId = CAN_GIMBAL_ALL_ID;
-    gimbal_tx_message.IDE = CAN_ID_STD;
-    gimbal_tx_message.RTR = CAN_RTR_DATA;
-    gimbal_tx_message.DLC = 0x08;
-    HAL_CAN_AddTxMessage(&can, &gimbal_tx_message, gimbal_can_send_data, &send_mail_box);
+    tx_message.StdId = send_id;
+    tx_message.IDE = CAN_ID_STD;
+    tx_message.RTR = CAN_RTR_DATA;
+    tx_message.DLC = 0x08;
+    for(int i=0;i<8;i++)
+    can_send_data[i] = send_data[i];
+    HAL_CAN_AddTxMessage(&can, &tx_message, can_send_data, &send_mail_box);
 }

@@ -8,6 +8,9 @@
 #endif //BSP_CAN_H
 #define CAN_RC_DATA_Frame_0 0x131
 #define CAN_RC_DATA_Frame_1 0x132
+static CAN_TxHeaderTypeDef  tx_message;
+static uint8_t              can_send_data[8];
+
 void CAN_Device_Init(void);
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan);
 /**

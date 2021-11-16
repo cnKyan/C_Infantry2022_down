@@ -264,10 +264,6 @@ stdint.h
 main.h
 ../Inc/main.h
 
-../Inc/crc.h
-main.h
-../Inc/main.h
-
 ../Inc/gpio.h
 main.h
 ../Inc/main.h
@@ -653,24 +649,4 @@ cmsis_os.h
 C:/Users/HLiamso/Desktop/test/APP/cmsis_os.h
 gpio.h
 C:/Users/HLiamso/Desktop/test/APP/gpio.h
-
-C:/Users/HLiamso/Desktop/test/BSP/Src/bsp_can.c
-can.h
--
-bsp_can.h
-C:/Users/HLiamso/Desktop/test/BSP/Src/bsp_can.h
-
-C:/Users/HLiamso/Desktop/test/Src/main.c
-main.h
-C:/Users/HLiamso/Desktop/test/Src/main.h
-cmsis_os.h
-C:/Users/HLiamso/Desktop/test/Src/cmsis_os.h
-can.h
-C:/Users/HLiamso/Desktop/test/Src/can.h
-crc.h
-C:/Users/HLiamso/Desktop/test/Src/crc.h
-gpio.h
-C:/Users/HLiamso/Desktop/test/Src/gpio.h
-bsp_can.h
-C:/Users/HLiamso/Desktop/test/Src/bsp_can.h
 

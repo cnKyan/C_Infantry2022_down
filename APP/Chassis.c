@@ -279,3 +279,30 @@ void send_chassis_moto_zero_current(void)
 
     write_can(CHASSIS_CAN, CAN_CHASSIS_ID, data);
 }
+/**
+  * @brief     发送底盘电机电流数据到电调
+  */
+void send_chassis_moto_current(int16_t current[])
+{
+    static uint8_t data[8];
+
+    data[0] = current[0] >> 8;
+    data[1] = current[0];
+    data[2] = current[1] >> 8;
+    data[3] = current[1];
+    data[4] = current[2] >> 8;
+    data[5] = current[2];
+    data[6] = current[3] >> 8;
+    data[7] = current[3];
+
+//	data[0] = 0;
+//  data[1] = 0;
+//  data[2] = 0;
+//  data[3] = 0;
+//  data[4] = 0;
+//  data[5] = 0;
+//  data[6] = 0;
+//  data[7] = 0;
+
+    write_can(CHASSIS_CAN, CAN_CHASSIS_ID, data);
+}

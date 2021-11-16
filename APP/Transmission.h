@@ -8,6 +8,7 @@
 #endif //TRANSMISSION_H
 #include "cmsis_os.h"
 #include "gpio.h"
+
 /**
   * @brief     CAN 设备发送和接收 ID 枚举
   */
@@ -238,10 +239,3 @@ typedef struct
     volatile offline_dev_t  err_list[ERROR_LIST_LENGTH];
     err_id_e err_id;
 } __attribute__((__packed__)) glb_err_type_t;
-rc_type_t rc;
-gimbal_yaw_t gim;
-glb_err_type_t glb_err;
-/* gimbal relative position param */
-float     pit_relative_angle;
-float     yaw_relative_angle;  //unit: degree
-km_control_t km;
