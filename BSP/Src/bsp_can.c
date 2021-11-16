@@ -3,6 +3,7 @@
 //
 
 #include <can.h>
+#include <Detect.h>
 #include "bsp_can.h"
 void CAN_Device_Init(void){
     CAN_FilterTypeDef can_filter_st;
@@ -49,7 +50,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan){
     uint8_t rx_data[8];
     static uint8_t RC_Data_Buf[16];
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &rx_header, rx_data);
-    if(hcan=&hcan2){
+    if(hcan==&hcan2){
         switch (rx_header.StdId){
             case CAN_RC_DATA_Frame_0:
                 RC_Data_Buf[0] = rx_data[0];
@@ -72,6 +73,46 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan){
                 RC_Data_Buf[15] = rx_data[7];
 
                 break;
+        }
+    }
+    if(hcan==&hcan1){
+    switch (rx_header.StdId){
+        case CAN_3508_M1_ID:
+        {
+            ChassisMotor[0].msg_cnt++ <= 50 ? get_motor_offset(&ChassisMotor[0], rx_data) : \
+            get_moto_info(&ChassisMotor[0], rx_data);
+            err_detector_hook(CHASSIS_M1_OFFLINE);
+        }
+        break;
+        case CAN_3508_M2_ID:
+        {
+            ChassisMotor[1].msg_cnt++ <= 50 ? get_motor_offset(&ChassisMotor[1], rx_data) : \
+            get_moto_info(&ChassisMotor[1], rx_data);
+            err_detector_hook(CHASSIS_M2_OFFLINE);
+        }
+        break;
+
+        case CAN_3508_M3_ID:
+        {
+            ChassisMotor[2].msg_cnt++ <= 50 ? get_motor_offset(&ChassisMotor[2], rx_data) : \
+            get_moto_info(&ChassisMotor[2], rx_data);
+            err_detector_hook(CHASSIS_M3_OFFLINE);
+        }
+        break;
+        case CAN_3508_M4_ID:
+        {
+            ChassisMotor[3].msg_cnt++ <= 50 ? get_motor_offset(&ChassisMotor[3], rx_data) : \
+            get_moto_info(&ChassisMotor[3], rx_data);
+            err_detector_hook(CHASSIS_M4_OFFLINE);
+        }
+        break;
+
+        case CAN_SUPERCAP_RECV:
+            //PowerDataResolve(rx_data);
+        default:
+        {
+        }
+        break;
         }
     }
 }

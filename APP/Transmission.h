@@ -12,23 +12,7 @@
 /**
   * @brief     CAN 设备发送和接收 ID 枚举
   */
-typedef enum
-{
-    //接收ID
-    CAN_3508_M1_ID       = 0x201,
-    CAN_3508_M2_ID       = 0x202,
-    CAN_3508_M3_ID       = 0x203,
-    CAN_3508_M4_ID       = 0x204,
-    CAN_YAW_MOTOR_ID     = 0x205,//ID 1 001
-    CAN_PIT_MOTOR_ID     = 0x206,//ID 2 010
-    CAN_TRIGGER_MOTOR_ID = 0x207,
-    CAN_SUPERCAP_RECV    = 0x211,
-    //发送ID
-    CAN_CHASSIS_ID       = 0x200,
-    CAN_SUPER_CAP_ID      = 0X210,
-    CAN_GIMBAL_ID        = 0x1ff,
 
-} can_msg_id_e;
 /**
   * @brief     解析后的遥控器数据结构体
   */
@@ -143,21 +127,7 @@ typedef enum
 /**
   * @brief     底盘控制数据结构体
   */
-typedef enum
-{
-    DEVICE_NORMAL = 0,
-    CHASSIS_M1_OFFLINE,
-    CHASSIS_M2_OFFLINE,
-    CHASSIS_M3_OFFLINE,
-    CHASSIS_M4_OFFLINE,
-    REMOTE_CTRL_OFFLINE,
-    GIMBAL_YAW_OFFLINE,
-    GIMBAL_PIT_OFFLINE,
-    AMMO_BOOSTER1_OFFLINE,
-    AMMO_BOOSTER2_OFFLINE,
-    TRIGGER_MOTO_OFFLINE,
-    ERROR_LIST_LENGTH,
-} err_id_e;
+
 typedef struct
 {
     /* 底盘控制模式相关 */
@@ -224,18 +194,4 @@ typedef struct
     kb_move_e move_mode;
 
 } km_control_t;
-typedef struct
-{
-    volatile uint32_t last_time;
-    volatile uint32_t err_exist : 1;   //1 = err_exist, 0 = everything ok
-    volatile uint32_t enable : 1;
-    volatile uint32_t warn_pri : 6;    //priority
-    volatile uint32_t delta_time : 16; //time interval last
-    volatile uint32_t set_timeout : 16;
-} __attribute__((__packed__)) offline_dev_t;
-typedef struct
-{
-    volatile offline_dev_t *err_now;
-    volatile offline_dev_t  err_list[ERROR_LIST_LENGTH];
-    err_id_e err_id;
-} __attribute__((__packed__)) glb_err_type_t;
+

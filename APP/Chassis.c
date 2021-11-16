@@ -5,6 +5,8 @@
 
 
 #include "Chassis.h"
+#include "Detect.h"
+
 extern osThreadId ChassisHandle;
 
 //底盘陀螺转速系数

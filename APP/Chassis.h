@@ -25,7 +25,6 @@ chassis_t chassis;
 Motor_t ChassisMotor[4];
 rc_type_t rc;
 gimbal_yaw_t gim;
-glb_err_type_t glb_err;
 /* gimbal relative position param */
 float pit_relative_angle;
 float yaw_relative_angle;  //unit: degree

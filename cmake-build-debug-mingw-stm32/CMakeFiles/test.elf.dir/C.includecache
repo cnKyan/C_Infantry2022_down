@@ -6,7 +6,13 @@
 
 #IncludeRegexTransform: 
 
+../APP/Detect.h
+stdint.h
+../APP/stdint.h
+
 ../BSP/Inc/bsp_can.h
+motor.h
+-
 stm32f4xx_hal_def.h
 ../BSP/Inc/stm32f4xx_hal_def.h
 
@@ -261,6 +267,10 @@ stdint.h
 -
 
 ../Inc/can.h
+main.h
+../Inc/main.h
+
+../Inc/crc.h
 main.h
 ../Inc/main.h
 
@@ -627,6 +637,8 @@ cmsis_os.h
 C:/Users/HLiamso/Desktop/test/APP/Chassis.c
 Chassis.h
 C:/Users/HLiamso/Desktop/test/APP/Chassis.h
+Detect.h
+C:/Users/HLiamso/Desktop/test/APP/Detect.h
 
 C:/Users/HLiamso/Desktop/test/APP/Chassis.h
 cmsis_os.h
@@ -640,13 +652,37 @@ C:/Users/HLiamso/Desktop/test/APP/Transmission.h
 bsp_can.h
 C:/Users/HLiamso/Desktop/test/APP/bsp_can.h
 
-C:/Users/HLiamso/Desktop/test/APP/Transmission.c
-Transmission.h
-C:/Users/HLiamso/Desktop/test/APP/Transmission.h
+C:/Users/HLiamso/Desktop/test/APP/Detect.h
+stdint.h
+C:/Users/HLiamso/Desktop/test/APP/stdint.h
 
 C:/Users/HLiamso/Desktop/test/APP/Transmission.h
 cmsis_os.h
 C:/Users/HLiamso/Desktop/test/APP/cmsis_os.h
 gpio.h
 C:/Users/HLiamso/Desktop/test/APP/gpio.h
+
+C:/Users/HLiamso/Desktop/test/BSP/Src/bsp_can.c
+can.h
+-
+Detect.h
+-
+bsp_can.h
+C:/Users/HLiamso/Desktop/test/BSP/Src/bsp_can.h
+
+C:/Users/HLiamso/Desktop/test/Src/main.c
+main.h
+C:/Users/HLiamso/Desktop/test/Src/main.h
+cmsis_os.h
+C:/Users/HLiamso/Desktop/test/Src/cmsis_os.h
+can.h
+C:/Users/HLiamso/Desktop/test/Src/can.h
+crc.h
+C:/Users/HLiamso/Desktop/test/Src/crc.h
+gpio.h
+C:/Users/HLiamso/Desktop/test/Src/gpio.h
+bsp_can.h
+C:/Users/HLiamso/Desktop/test/Src/bsp_can.h
+bsp_dwt.h
+C:/Users/HLiamso/Desktop/test/Src/bsp_dwt.h
 

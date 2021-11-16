@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "bsp_can.h"
+#include "bsp_dwt.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -93,6 +94,8 @@ int main(void)
   MX_CAN2_Init();
   MX_CRC_Init();
   /* USER CODE BEGIN 2 */
+    //初始化DWT外设
+    DWT_Init(168);
     CAN_Device_Init();
   /* USER CODE END 2 */
 
