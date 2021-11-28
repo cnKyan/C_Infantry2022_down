@@ -481,9 +481,22 @@ CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\HLiamso\Desktop\test\Middlewares\Third_Party\FreeRTOS\Source\timers.c -o CMakeFiles\test.elf.dir\Middlewares\Third_Party\FreeRTOS\Source\timers.c.s
 
+CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj: CMakeFiles/test.elf.dir/flags.make
+CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj: ../Src/CAN_receive.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj"
+	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\CAN_receive.c.obj -c C:\Users\HLiamso\Desktop\test\Src\CAN_receive.c
+
+CMakeFiles/test.elf.dir/Src/CAN_receive.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.elf.dir/Src/CAN_receive.c.i"
+	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\HLiamso\Desktop\test\Src\CAN_receive.c > CMakeFiles\test.elf.dir\Src\CAN_receive.c.i
+
+CMakeFiles/test.elf.dir/Src/CAN_receive.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.elf.dir/Src/CAN_receive.c.s"
+	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\HLiamso\Desktop\test\Src\CAN_receive.c -o CMakeFiles\test.elf.dir\Src\CAN_receive.c.s
+
 CMakeFiles/test.elf.dir/Src/can.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/can.c.obj: ../Src/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/test.elf.dir/Src/can.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/test.elf.dir/Src/can.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\can.c.obj -c C:\Users\HLiamso\Desktop\test\Src\can.c
 
 CMakeFiles/test.elf.dir/Src/can.c.i: cmake_force
@@ -496,7 +509,7 @@ CMakeFiles/test.elf.dir/Src/can.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/crc.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/crc.c.obj: ../Src/crc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/test.elf.dir/Src/crc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/test.elf.dir/Src/crc.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\crc.c.obj -c C:\Users\HLiamso\Desktop\test\Src\crc.c
 
 CMakeFiles/test.elf.dir/Src/crc.c.i: cmake_force
@@ -509,7 +522,7 @@ CMakeFiles/test.elf.dir/Src/crc.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/freertos.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/freertos.c.obj: ../Src/freertos.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/test.elf.dir/Src/freertos.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/test.elf.dir/Src/freertos.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\freertos.c.obj -c C:\Users\HLiamso\Desktop\test\Src\freertos.c
 
 CMakeFiles/test.elf.dir/Src/freertos.c.i: cmake_force
@@ -522,7 +535,7 @@ CMakeFiles/test.elf.dir/Src/freertos.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/gpio.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/gpio.c.obj: ../Src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/test.elf.dir/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/test.elf.dir/Src/gpio.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\gpio.c.obj -c C:\Users\HLiamso\Desktop\test\Src\gpio.c
 
 CMakeFiles/test.elf.dir/Src/gpio.c.i: cmake_force
@@ -535,7 +548,7 @@ CMakeFiles/test.elf.dir/Src/gpio.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/main.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/main.c.obj: ../Src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/test.elf.dir/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/test.elf.dir/Src/main.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\main.c.obj -c C:\Users\HLiamso\Desktop\test\Src\main.c
 
 CMakeFiles/test.elf.dir/Src/main.c.i: cmake_force
@@ -548,7 +561,7 @@ CMakeFiles/test.elf.dir/Src/main.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.obj: ../Src/stm32f4xx_hal_msp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\stm32f4xx_hal_msp.c.obj -c C:\Users\HLiamso\Desktop\test\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -561,7 +574,7 @@ CMakeFiles/test.elf.dir/Src/stm32f4xx_hal_msp.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.obj: ../Src/stm32f4xx_it.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\stm32f4xx_it.c.obj -c C:\Users\HLiamso\Desktop\test\Src\stm32f4xx_it.c
 
 CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.i: cmake_force
@@ -574,7 +587,7 @@ CMakeFiles/test.elf.dir/Src/stm32f4xx_it.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/syscalls.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/syscalls.c.obj: ../Src/syscalls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/test.elf.dir/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/test.elf.dir/Src/syscalls.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\syscalls.c.obj -c C:\Users\HLiamso\Desktop\test\Src\syscalls.c
 
 CMakeFiles/test.elf.dir/Src/syscalls.c.i: cmake_force
@@ -587,7 +600,7 @@ CMakeFiles/test.elf.dir/Src/syscalls.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.obj: ../Src/system_stm32f4xx.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\Src\system_stm32f4xx.c.obj -c C:\Users\HLiamso\Desktop\test\Src\system_stm32f4xx.c
 
 CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.i: cmake_force
@@ -600,7 +613,7 @@ CMakeFiles/test.elf.dir/Src/system_stm32f4xx.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/UserLib/controller.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/UserLib/controller.c.obj: ../UserLib/controller.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/test.elf.dir/UserLib/controller.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/test.elf.dir/UserLib/controller.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\UserLib\controller.c.obj -c C:\Users\HLiamso\Desktop\test\UserLib\controller.c
 
 CMakeFiles/test.elf.dir/UserLib/controller.c.i: cmake_force
@@ -613,7 +626,7 @@ CMakeFiles/test.elf.dir/UserLib/controller.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/UserLib/filter32.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/UserLib/filter32.c.obj: ../UserLib/filter32.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/test.elf.dir/UserLib/filter32.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/test.elf.dir/UserLib/filter32.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\UserLib\filter32.c.obj -c C:\Users\HLiamso\Desktop\test\UserLib\filter32.c
 
 CMakeFiles/test.elf.dir/UserLib/filter32.c.i: cmake_force
@@ -626,7 +639,7 @@ CMakeFiles/test.elf.dir/UserLib/filter32.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/UserLib/motor.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/UserLib/motor.c.obj: ../UserLib/motor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/test.elf.dir/UserLib/motor.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/test.elf.dir/UserLib/motor.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\UserLib\motor.c.obj -c C:\Users\HLiamso\Desktop\test\UserLib\motor.c
 
 CMakeFiles/test.elf.dir/UserLib/motor.c.i: cmake_force
@@ -639,7 +652,7 @@ CMakeFiles/test.elf.dir/UserLib/motor.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/UserLib/pid.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/UserLib/pid.c.obj: ../UserLib/pid.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/test.elf.dir/UserLib/pid.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/test.elf.dir/UserLib/pid.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\UserLib\pid.c.obj -c C:\Users\HLiamso\Desktop\test\UserLib\pid.c
 
 CMakeFiles/test.elf.dir/UserLib/pid.c.i: cmake_force
@@ -652,7 +665,7 @@ CMakeFiles/test.elf.dir/UserLib/pid.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/UserLib/user_lib.c.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/UserLib/user_lib.c.obj: ../UserLib/user_lib.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/test.elf.dir/UserLib/user_lib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/test.elf.dir/UserLib/user_lib.c.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\UserLib\user_lib.c.obj -c C:\Users\HLiamso\Desktop\test\UserLib\user_lib.c
 
 CMakeFiles/test.elf.dir/UserLib/user_lib.c.i: cmake_force
@@ -665,7 +678,7 @@ CMakeFiles/test.elf.dir/UserLib/user_lib.c.s: cmake_force
 
 CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.obj: CMakeFiles/test.elf.dir/flags.make
 CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.obj: ../startup/startup_stm32f407xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.obj"
 	C:\gcc-arm-none-eabi\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\test.elf.dir\startup\startup_stm32f407xx.s.obj -c C:\Users\HLiamso\Desktop\test\startup\startup_stm32f407xx.s
 
 CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.i: cmake_force
@@ -710,6 +723,7 @@ test_elf_OBJECTS = \
 "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj" \
 "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj" \
 "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj" \
+"CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj" \
 "CMakeFiles/test.elf.dir/Src/can.c.obj" \
 "CMakeFiles/test.elf.dir/Src/crc.c.obj" \
 "CMakeFiles/test.elf.dir/Src/freertos.c.obj" \
@@ -761,6 +775,7 @@ test.elf: CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.
 test.elf: CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj
 test.elf: CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
 test.elf: CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+test.elf: CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj
 test.elf: CMakeFiles/test.elf.dir/Src/can.c.obj
 test.elf: CMakeFiles/test.elf.dir/Src/crc.c.obj
 test.elf: CMakeFiles/test.elf.dir/Src/freertos.c.obj
@@ -778,7 +793,7 @@ test.elf: CMakeFiles/test.elf.dir/UserLib/user_lib.c.obj
 test.elf: CMakeFiles/test.elf.dir/startup/startup_stm32f407xx.s.obj
 test.elf: CMakeFiles/test.elf.dir/build.make
 test.elf: CMakeFiles/test.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable test.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\HLiamso\Desktop\test\cmake-build-debug-mingw-stm32\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking C executable test.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/HLiamso/Desktop/test/cmake-build-debug-mingw-stm32/test.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/HLiamso/Desktop/test/cmake-build-debug-mingw-stm32/test.bin"

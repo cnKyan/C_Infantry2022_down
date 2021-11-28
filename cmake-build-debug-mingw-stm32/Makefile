@@ -896,6 +896,30 @@ Middlewares/Third_Party/FreeRTOS/Source/timers.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 .PHONY : Middlewares/Third_Party/FreeRTOS/Source/timers.c.s
 
+Src/CAN_receive.obj: Src/CAN_receive.c.obj
+.PHONY : Src/CAN_receive.obj
+
+# target to build an object file
+Src/CAN_receive.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj
+.PHONY : Src/CAN_receive.c.obj
+
+Src/CAN_receive.i: Src/CAN_receive.c.i
+.PHONY : Src/CAN_receive.i
+
+# target to preprocess a source file
+Src/CAN_receive.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/Src/CAN_receive.c.i
+.PHONY : Src/CAN_receive.c.i
+
+Src/CAN_receive.s: Src/CAN_receive.c.s
+.PHONY : Src/CAN_receive.s
+
+# target to generate assembly for a file
+Src/CAN_receive.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/Src/CAN_receive.c.s
+.PHONY : Src/CAN_receive.c.s
+
 Src/can.obj: Src/can.c.obj
 .PHONY : Src/can.obj
 
@@ -1345,6 +1369,9 @@ help:
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.obj
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.i
 	@echo ... Middlewares/Third_Party/FreeRTOS/Source/timers.s
+	@echo ... Src/CAN_receive.obj
+	@echo ... Src/CAN_receive.i
+	@echo ... Src/CAN_receive.s
 	@echo ... Src/can.obj
 	@echo ... Src/can.i
 	@echo ... Src/can.s

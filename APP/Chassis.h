@@ -9,10 +9,9 @@
 #include <cmsis_os.h>
 #include "controller.h"
 #include "motor.h"
-#include "Transmission.h"
-#include "bsp_can.h"
+#include "typedefine.h"
 #define CHASSIS_CAN hcan1
-extern rc_type_t rc;
+
 /* 底盘控制周期 (ms) */
 #define CHASSIS_PERIOD 10
 /* 底盘扭腰角度 (degree)*/
@@ -23,7 +22,7 @@ extern rc_type_t rc;
 PID_t RotateFollow;
 chassis_t chassis;
 Motor_t ChassisMotor[4];
-rc_type_t rc;
+
 gimbal_yaw_t gim;
 /* gimbal relative position param */
 float pit_relative_angle;
@@ -71,5 +70,4 @@ void chassis_open_loop_calculate(void);
 void send_chassis_moto_current(int16_t current[]);
 void chassis_top_handle(void);
 void send_chassis_moto_zero_current(void);
-extern chassis_t chassis;
 extern int16_t   chassis_moto_current[];

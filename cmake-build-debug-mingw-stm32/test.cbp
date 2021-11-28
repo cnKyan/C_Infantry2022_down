@@ -411,6 +411,9 @@
 		<Unit filename="C:/Users/HLiamso/Desktop/test/STM32F407IGHx_FLASH.ld">
 			<Option target="test.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/HLiamso/Desktop/test/Src/CAN_receive.c">
+			<Option target="test.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/HLiamso/Desktop/test/Src/can.c">
 			<Option target="test.elf"/>
 		</Unit>

@@ -31,6 +31,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj"
   "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj"
   "CMakeFiles/test.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj"
+  "CMakeFiles/test.elf.dir/Src/CAN_receive.c.obj"
   "CMakeFiles/test.elf.dir/Src/can.c.obj"
   "CMakeFiles/test.elf.dir/Src/crc.c.obj"
   "CMakeFiles/test.elf.dir/Src/freertos.c.obj"

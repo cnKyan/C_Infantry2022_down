@@ -4,8 +4,11 @@
 
 
 
+
+#include <bsp_can.h>
+#include <CAN_receive.h>
 #include "Chassis.h"
-#include "Detect.h"
+
 
 extern osThreadId ChassisHandle;
 
@@ -23,62 +26,65 @@ void chassis_task(void const * argument)
     for(;;)
     {
         //切换底盘状态
-        get_chassis_mode();
-
-        switch (chassis.mode)
-        {
-            //底盘跟随云台模式，右侧拨杆在上面
-            case CHASSIS_FOLLOW_GIMBAL:
-            {
-                chassis_control_information_get();
-
-                //底盘跟随云台旋转控制，覆盖前面计算出来的值
-                if ((gim.ctrl_mode == GIMBAL_CLOSE_LOOP_ZGYRO))
-//         || ((gim.ctrl_mode == GIMBAL_NO_ACTION) && (gim.no_action_flag == 1)))
-                {
-                    chassis.vw = PID_Calculate(&RotateFollow, yaw_relative_angle, 0);
-                    chassis_top_handle();
-                }
-                else
-                    chassis.vw = 0;
-            }break;
-
-                //底盘开环模式，右侧拨杆在中间
-                //此模式适用于不装云台情况下单独控制底盘使用
-            case CHASSIS_OPEN_LOOP:
-            {
-                chassis_control_information_get();
-            }break;
-
-            case CHASSIS_SPIN:
-            {
-                chassis_control_information_get();
-                chassis.vw=spin_flag*10;
-                chassis_top_handle();
+//        get_chassis_mode();
 //
-//        //底盘扭腰旋转速度处理，覆盖前面计算出来的值
-//        chassis_twist_handle();
-            }break;
-
-                //底盘保持静止锁死不动
-            default:
-            {
-                chassis.vy = 0;
-                chassis.vx = 0;
-                chassis.vw = 0;
-            }break;
-        }
-        if (gim.ctrl_mode==GIMBAL_AUTO)
-            chassis_top_handle();
-        if (chassis.mode == CHASSIS_RELAX || glb_err.err_list[REMOTE_CTRL_OFFLINE].err_exist)
-        {
-            send_chassis_moto_zero_current();
-        }
+//        switch (chassis.mode)
+//        {
+//            //底盘跟随云台模式，右侧拨杆在上面
+//            case CHASSIS_FOLLOW_GIMBAL:
+//            {
+//                chassis_control_information_get();
+//
+//                //底盘跟随云台旋转控制，覆盖前面计算出来的值
+//                if ((gim.ctrl_mode == GIMBAL_CLOSE_LOOP_ZGYRO))
+////         || ((gim.ctrl_mode == GIMBAL_NO_ACTION) && (gim.no_action_flag == 1)))
+//                {
+//                    chassis.vw = PID_Calculate(&RotateFollow, yaw_relative_angle, 0);
+//                    chassis_top_handle();
+//                }
+//                else
+//                    chassis.vw = 0;
+//            }break;
+//
+//                //底盘开环模式，右侧拨杆在中间
+//                //此模式适用于不装云台情况下单独控制底盘使用
+//            case CHASSIS_OPEN_LOOP:
+//            {
+//                chassis_control_information_get();
+//            }break;
+//
+//            case CHASSIS_SPIN:
+//            {
+//                chassis_control_information_get();
+//                chassis.vw=spin_flag*10;
+//                chassis_top_handle();
+////
+////        //底盘扭腰旋转速度处理，覆盖前面计算出来的值
+////        chassis_twist_handle();
+//            }break;
+//
+//                //底盘保持静止锁死不动
+//            default:
+//            {
+//                chassis.vy = 0;
+//                chassis.vx = 0;
+//                chassis.vw = 0;
+//            }break;
+//        }
+//        if (gim.ctrl_mode==GIMBAL_AUTO)
+//            chassis_top_handle();
+//        if (chassis.mode == CHASSIS_RELAX || glb_err.err_list[REMOTE_CTRL_OFFLINE].err_exist)
+//        {
+//            send_chassis_moto_zero_current();
+//        }
+//        else
+//        {
+//            chassis_custom_control();
+//        }
+        if(rc.sw2==RC_UP)
+            CAN_cmd_chassis(4000,4000,4000,4000);
         else
-        {
-            chassis_custom_control();
-        }
-
+            send_chassis_moto_zero_current();
         //底盘任务周期控制 10ms
         osDelayUntil(&chassis_wake_time, CHASSIS_PERIOD);
     }
@@ -86,7 +92,7 @@ void chassis_task(void const * argument)
 }
 
 void chassis_pid_param_init() {
-    osThreadSuspend(ChassisHandle);
+    //osThreadSuspend(ChassisHandle);
     for (int i = 0; i < 4; i++)
     {
         PID_Init(

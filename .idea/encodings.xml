@@ -2,5 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Inc/CAN_receive.h" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Src/CAN_receive.c" charset="GBK" />
   </component>
 </project>
